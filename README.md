@@ -1,35 +1,32 @@
 # William Mosley
 
-Alpharetta, GA · [LinkedIn](https://www.linkedin.com/in/william-mosley)
+Atlanta, GA · [LinkedIn](https://www.linkedin.com/in/william-mosley) · [Hire me on Guru](https://www.guru.com/freelancers/william-mosley)
 
-I build internal systems that agents operate, with scoped permissions, reversible actions, and failure reports you can check.
-
----
-
-### 🔧 Command Center
-
-A personal operations system: cash-flow projection, task and project tracking, a job pipeline, and a trade journal, all behind one dashboard. The demo surfaces a subset of those tools on fixture data.
-
-**[→ Live demo](https://willjmos.github.io/command-center-demo/)** · [source](https://github.com/Willjmos/command-center-demo)
-
-Python/Flask · React + TypeScript · SQLite · MCP tool servers
-
-The demo runs entirely in the browser, and the deployed app makes no application-data requests. Open DevTools and check. That isn't a promise, it's a gate: a CI check inspects the built output in a real browser on every deploy and blocks the release if it finds a same-origin API call, a loopback address, or private infrastructure strings. Each of those rules was proven capable of failing against a planted violation before its zero was trusted.
+I build websites, booking pages and AI helpers for small businesses, then hand them over in plain English so you can run them yourself.
 
 ---
 
-### What I care about in a system
+### What I can build for you
 
-Most of the work here isn't features. It's making a system incapable of lying about its own state.
+- **A website that brings in work.** A clean site that loads fast on phones, a quote or booking form, and a page that answers what customers keep asking.
+- **Booking, quotes and payments.** Customers pick a time or request a quote online, and payments go straight to your own account.
+- **AI helpers for the busywork.** Agents that watch your inbox, draft replies, chase what you're waiting on and flag payments, while you approve anything that matters.
 
-- **A check that cannot fail is not a check.** The verifiers I build ship with a planted control that has to trip in the same run. Otherwise "it passed" and "it never ran" are the same observation.
-- **Report the denominator, always.** Output has to distinguish *no checks ran* from *all checks passed*. A result over an empty set is the most convincing wrong answer there is.
-- **Detecting a failure and not failing on it is decoration.** A gate that finds a problem and then exits zero is worse than no gate, because now you trust it.
+### How I work
 
-None of those are aspirational. Each one is written down because a verifier here reported success while examining the wrong thing, and I had to go find out why.
+1. **You get a quote before I start.** We agree what's included and what it costs.
+2. **You see a test version first.** Nothing goes live until you've clicked through it and said yes.
+3. **Everything is in your name.** Your domain, your hosting, your payment account. I don't hold your business hostage.
+4. **You get a plain-English handover.** It covers how to update it, what it costs to run, and who to call if something breaks.
 
 ---
 
-### Currently
+### 🔧 Command Center: what I run my own business on
 
-Building agent workflows with reversibility tiers, meaning actions an agent takes freely, actions it takes and reports, and actions that always need a human. Also a review layer where an outside model challenges the reasoning rather than the output.
+My own AI helpers run on a system I built and use every day. It's the same approach I'd set up for you:
+
+- **Services** run in the background. One reads my inboxes every few minutes and flags client replies and payments.
+- **Workflows** split a job into steps. A fast model sorts, another writes the draft, a stronger one checks the plan, and a model from a different company reviews the result.
+- **One-button approvals.** Anything that spends money, contacts a client or publishes something waits for me to tap approve, decline or send back.
+
+Python · React + TypeScript · SQLite · n8n · Claude + DeepSeek · MCP tool servers
